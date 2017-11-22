@@ -1,6 +1,5 @@
-function driversWithRevenueOver (drivers, value) {
-  let results = drivers.filter(function(over){
-    return drivers[name] > over
-  })
+function driversWithRevenueOver (drivers, revenue) {
+  return drivers.filter(function (driver) {
+    return driver.revenue > revenue;
+  });
 }
-const drivers = [];
