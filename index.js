@@ -23,3 +23,10 @@ function exactMatch (drivers, matcher) {
     return matches;
   });
 }
+
+function exactMatchToList (drivers, matcher) {
+  return exactMatch (drivers, matcher)
+  .map(function (driver){
+    return driver.name
+  })
+}
